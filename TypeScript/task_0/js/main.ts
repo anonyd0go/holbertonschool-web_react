@@ -40,3 +40,5 @@ for (let student of studentsList) {
   `;
   table.appendChild(tr);
 }
+
+document.body.appendChild(table);
