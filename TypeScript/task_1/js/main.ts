@@ -7,3 +7,7 @@ interface Teacher {
     location: string;
     [propName: string]: unknown;
 }
+
+interface Directors extends Teacher {
+    numberOfReports: number;
+}
