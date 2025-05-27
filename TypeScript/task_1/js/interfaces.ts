@@ -43,10 +43,25 @@ export interface printTeacherFunction {
     (firstName:string, lastName: string): string;
 }
 
+/**
+ * @interface studentConstructor
+ * @description Constructor interface for creating student instances
+ * @param {string} firstName - The student's first name
+ * @param {string} lastName - The student's last name
+ * @returns {studentClass} A new student instance
+ */
 export interface studentConstructor {
     new ( firstName: string, lastName:string ): studentClass;
 }
 
+/**
+ * @interface studentClass
+ * @description Represents a student with basic information and methods
+ * @property {string} firstName - The student's first name
+ * @property {string} lastName - The student's last name
+ * @method workOnHomework - Method to indicate homework completion status
+ * @method displayName - Method to get the student's first name
+ */
 export interface studentClass {
     firstName: string;
     lastName: string;
