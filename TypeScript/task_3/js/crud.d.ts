@@ -1,23 +1,23 @@
-import { RowElement, RowId } from "./interface";
+import { RowElement, RowID } from "./interface";
 
 /**
  * Inserts a new row into the table
  * @param {RowElement} row - The row element to insert
- * @returns {RowId} The id of the newly inserted row
+ * @returns {RowID} The id of the newly inserted row
  */
-export declare function insertRow(row: RowElement): RowId;
+export declare function insertRow(row: RowElement): RowID;
 
 /**
  * Deletes a row from the table
- * @param {RowId} rowId - The id of the row to delete
+ * @param {RowID} rowId - The id of the row to delete
  * @returns {void}
  */
-export declare function deleteRow(rowId: RowId): void;
+export declare function deleteRow(rowId: RowID): void;
 
 /**
  * Updates an existing row in the table
- * @param {RowId} rowId - The id of the row to update
+ * @param {RowID} rowId - The id of the row to update
  * @param {RowElement} row - The new row data
- * @returns {RowId} The id of the updated row
+ * @returns {RowID} The id of the updated row
  */
-export declare function updateRow(rowId: RowId, row: RowElement): RowId;
+export declare function updateRow(rowId: RowID, row: RowElement): RowID;

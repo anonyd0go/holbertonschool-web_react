@@ -1,8 +1,8 @@
 /**
  * Type alias representing a unique identifier for a row
- * @typedef {number} RowId
+ * @typedef {number} RowID
  */
-export type RowId = number;
+export type RowID = number;
 
 /**
  * Interface representing a row element with personal information
