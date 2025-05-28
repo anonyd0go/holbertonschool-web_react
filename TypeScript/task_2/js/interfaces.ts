@@ -2,7 +2,7 @@
  * Interface defining the basic employee properties and methods
  * @interface EmployeeInterface
  */
-interface EmployeeInterface {
+export interface EmployeeInterface {
     /** Employee's salary which can be a number or string */
     salary: number | string;
     /** Method to determine if employee can work from home
@@ -50,3 +50,9 @@ export interface TeacherInterface extends EmployeeInterface {
      */
     workTeacherTasks(): string;
 }
+
+/**
+ * Type representing the subjects that can be taught
+ * @type {('Math'|'History')}
+ */
+export type Subjects = 'Math' | 'History';
