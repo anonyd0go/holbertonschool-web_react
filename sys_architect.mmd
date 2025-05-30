@@ -1,9 +1,0 @@
----
-config:
-  layout: dagre
----
-flowchart LR
-    A["PWA (React.js Client)"] -- HTTPS (REST API) --> B("Node.js/Express.js API Gateway/Logic Layer")
-    A -- HTTPS (Supabase SDK) --> D["Supabase (Auth, DB, Storage)"]
-    B -- HTTPS (Supabase SDK) --> D
-    B -- HTTPS --> C["External Services (Maps, Geolocation)"]
